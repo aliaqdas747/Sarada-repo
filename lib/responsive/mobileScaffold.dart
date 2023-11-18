@@ -11,6 +11,8 @@ class mobileScaffold extends StatefulWidget{
 }
 
 class _mobileScaffoldState extends State<mobileScaffold> {
+  double _width = 50.0;
+  double _height = 100.0;
   @override
   Widget build(BuildContext context) {
   return Scaffold(
@@ -63,6 +65,8 @@ class _mobileScaffoldState extends State<mobileScaffold> {
                 )
             ),
           ),
+
+
           //page2
           sec_page,
 

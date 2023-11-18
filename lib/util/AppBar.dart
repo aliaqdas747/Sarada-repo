@@ -1,6 +1,8 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+//Color(0xFF10EFB1)
+//Color(0xFF10EFB1)
 var deskAppBar =  Container(width: double.infinity,
   color: Colors.grey.shade800,
   height: 150,
@@ -16,7 +18,7 @@ var deskAppBar =  Container(width: double.infinity,
                 fontSize: 20,
               ),
               children: <TextSpan>[
-                TextSpan(text: '</>Muhammad ',style: TextStyle(fontFamily:'font1',fontWeight: FontWeight.w900,color: Colors.orange,)),
+                TextSpan(text: '</>Muhammad ',style: TextStyle(fontFamily:'font1',fontWeight: FontWeight.w900,color: Color(0xFF10EFB1),)),
                 TextSpan(text: 'Ali Aqdas',style: TextStyle(fontWeight: FontWeight.w200,fontFamily:' font1'))
               ]
           ),
@@ -39,7 +41,7 @@ var deskAppBar =  Container(width: double.infinity,
 );
 var myColor = Colors.grey.shade800;
 var cont_soft = Container(
-  color: Colors.orange,
+  color: Color(0xFF10EFB1),
   child: Padding(
     padding: const EdgeInsets.all(10.0),
     child: Text('Software Developer'),
@@ -74,7 +76,7 @@ borderRadius: BorderRadius.circular(5),
               children: [
                 Text(text1,style:TextStyle(
                   fontSize:17 ,
-                  color: Colors.orange,
+                  color: Color(0xFF10EFB1),
                   fontFamily: 'font1',
                 )),
                 Image.asset(imagePath,width: 40,height: 40,),
@@ -98,7 +100,7 @@ borderRadius: BorderRadius.circular(5),
 
 }
 //first Page Container
-class f_Container extends StatelessWidget{
+class f_Container extends StatelessWidget {
   final String imgPath2;
   final String text2;
   final VoidCallback onTap;
@@ -121,7 +123,7 @@ class f_Container extends StatelessWidget{
            mainAxisAlignment: MainAxisAlignment.center,
            children: [
              Image.asset(imgPath2,height: 20,),
-             Text(text2,style: TextStyle(color: Colors.white),)
+             Text(text2,style: TextStyle(color: Color(0xFF15AB81)),)
            ],
          ),
        )
@@ -147,7 +149,7 @@ var about_cont_mob =  Container(
               TextSpan(text: '</>Muhammad ',
                   style: TextStyle(
                     fontFamily: 'font1', fontWeight: FontWeight
-                      .w900, color: Colors.orange,)),
+                      .w900, color: Color(0xFF10EFB1),)),
               TextSpan(text: 'Ali Aqdas',
                   style: TextStyle(fontWeight: FontWeight.w200,
                       fontFamily: ' font1'))
@@ -188,7 +190,7 @@ var about_container =  Container(
               TextSpan(text: '</>Muhammad ',
                   style: TextStyle(
                     fontFamily: 'font1', fontWeight: FontWeight
-                      .w900, color: Colors.orange,)),
+                      .w900, color: Color(0xFF10EFB1),)),
               TextSpan(text: 'Ali Aqdas',
                   style: TextStyle(fontWeight: FontWeight.w200,
                       fontFamily: ' font1'))
@@ -217,11 +219,14 @@ var img_container =Container(
       children  : [
 
         CircleAvatar(
-          child: Image.asset(
-            'assets/images/myimage.png', width: 400,
-            height: 400,),
+          child: ClipRRect(
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50),bottomRight: Radius.circular(50)),
+            child: Image.asset(
+              'assets/images/img_4.png', width: 400,
+              height: 400,),
+          ),
           radius: 150,
-          backgroundColor: Colors.orange,
+          backgroundColor: Color(0xFF10EFB1),
         ),
         Positioned(
 
@@ -247,13 +252,13 @@ var img_container =Container(
 var lets_chat =  InkWell(
   onTap: () => launch('https://mail.google.com/mail/u/0/?fs=1&to=albasti2611@gmail.com&tf=cm'),
   child:Text('Lets Chat', style: TextStyle(
-    color: Colors.orange,
+    color: Color(0xFF10EFB1),
     fontSize: 30,
     shadows: [
       Shadow(
           offset: Offset(2.0, 2.0),
           blurRadius: 3.0,
-          color: Colors.orange
+          color: Color(0xFF10EFB1)
 
       )
     ],
@@ -274,11 +279,11 @@ var animated_text =   SizedBox(
     animatedTexts: [
 
       TyperAnimatedText(
-          'I"am  a flutter developer',textStyle:TextStyle(color: Colors.orange,fontSize: 20,fontFamily: 'font1')),
+          'I"am  a flutter developer',textStyle:TextStyle(color: Color(0xFF10EFB1),fontSize: 20,fontFamily: 'font1')),
       TyperAnimatedText(
-          'I can develop Android & IOS applications',textStyle:TextStyle(color: Colors.orange,fontSize: 20,fontFamily: 'font1')),
+          'I can develop Android & IOS applications',textStyle:TextStyle(color: Color(0xFF10EFB1),fontSize: 20,fontFamily: 'font1')),
       TyperAnimatedText(
-          'I can make Web Applications for your business',textStyle:TextStyle(color: Colors.orange,fontSize: 20,fontFamily: 'font1')),
+          'I can make Web Applications for your business',textStyle:TextStyle(color: Color(0xFF10EFB1),fontSize: 20,fontFamily: 'font1')),
 
     ],),
 );
@@ -320,7 +325,7 @@ var sec_page =  Container(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Hello! I"am Ali Aqdas', style: TextStyle(fontSize: 25,color: Colors.orange,fontFamily: 'font1')),
+                Text('Hello! I"am Ali Aqdas', style: TextStyle(fontSize: 25,color: Color(0xFF10EFB1),fontFamily: 'font1')),
                 Text(
                   '"Passionate Flutter developer with a keen eye for detail and a dedication to creating exceptional user experiences. Skilled in crafting intuitive cross-platform applications, I bring creativity, expertise, and innovation to every project I undertake.\n\n'
                       '"Driven by a relentless pursuit of excellence, I thrive in collaborative environments, embracing challenges and transforming ideas into elegant, functional solutions. With a strong foundation in both backend development and Flutter, I am committed to pushing boundaries and delivering results that exceed expectations.""',
@@ -359,7 +364,7 @@ var mobileAppBar =AppBar(
 
             ),
             children: <TextSpan>[
-              TextSpan(text: '</>Muhammad ',style: TextStyle(fontWeight: FontWeight.w900,color: Colors.orange,fontFamily:'font1')),
+              TextSpan(text: '</>Muhammad ',style: TextStyle(fontWeight: FontWeight.w900,color:Color(0xFF10EFB1),fontFamily:'font1')),
               TextSpan(text: 'Ali Aqdas',style: TextStyle(fontWeight: FontWeight.w200,fontFamily:'font1'))
             ]
         ),
@@ -377,7 +382,7 @@ crossAxisAlignment: CrossAxisAlignment.center,
 children: [
 const DrawerHeader(child: Column(
 children: [
-Icon(Icons.account_circle,size: 100,color: Colors.orange,),
+Icon(Icons.account_circle,size: 100,color: Color(0xFF10EFB1),),
 Text('Ali Aqdas',style: TextStyle(fontFamily: 'font1',fontSize: 20,color: Colors.white,fontWeight: FontWeight.w900),)
 ],
 ),
@@ -385,19 +390,19 @@ Text('Ali Aqdas',style: TextStyle(fontFamily: 'font1',fontSize: 20,color: Colors
 Container(
 margin: EdgeInsets.only(left: 5,right: 5),
 width: double.infinity,
-color: Colors.orange,
+color: Color(0xFF10EFB1),
 child: f_Container(imgPath2: 'assets/images/facebook.png', text2: ' aliaqdas_1  ',  onTap: () => launch('https://www.facebook.com/alimughal.ali.9809/'),   )),
 SizedBox(height: 5,),
 Container(
 margin: EdgeInsets.only(left: 5,right: 5),
 width: double.infinity,
-color: Colors.orange,
+color: Color(0xFF10EFB1),
 child: f_Container(imgPath2: 'assets/images/instagram.png', text2: ' aliaqdas_1  ',  onTap: () => launch('https://www.instagram.com/ali_aqdas1/'),   )),
 SizedBox(height: 5,),
 Container(
 margin: EdgeInsets.only(left: 5,right: 5),
 width: double.infinity,
-color: Colors.orange,
+color: Color(0xFF10EFB1),
 child: f_Container(imgPath2: 'assets/images/linkedin.png', text2: ' Ali Aqdas  ',  onTap: () => launch('https://www.linkedin.com/in/ali-aqdas-72504b252/'),   )),
 
 
