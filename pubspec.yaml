@@ -39,6 +39,7 @@ dependencies:
   animated_text_kit: ^4.2.2
   font_awesome_flutter: ^10.6.0
   gap: ^3.0.1
+  firebase_core: ^2.22.0
 
 dev_dependencies:
   flutter_test:

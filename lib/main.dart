@@ -1,5 +1,6 @@
 // ignore_for_file: unused_import
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:portfoilio/responsive/DesktopScaffold.dart';
 import 'package:portfoilio/responsive/Responsive_Layout.dart';
@@ -10,7 +11,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // ignore: duplicate_import
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-void main() {
+void main() async{
+
   runApp(const MyApp());
 }
 

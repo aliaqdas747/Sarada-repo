@@ -222,7 +222,7 @@ var img_container =Container(
           child: ClipRRect(
             borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50),bottomRight: Radius.circular(50)),
             child: Image.asset(
-              'assets/images/img_4.png', width: 400,
+              'assets/images/mm.png', width: 400,
               height: 400,),
           ),
           radius: 150,
@@ -240,10 +240,10 @@ var img_container =Container(
             //  bottom: 0,
             child: Image.asset('assets/images/img_1.png',height: 30,)),
         Positioned(
-            top: 120,
-            left: 230,
+            top: 180,
+            left: 200,
           //  bottom: 0,
-            child: Image.asset('assets/images/dart.png',height: 80,))
+            child: Image.asset('assets/images/dart.png',height: 100,))
       ]
       )
     ],
